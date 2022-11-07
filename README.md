@@ -1,2 +1,2 @@
 # ResponsiveWebpageStructure
-https://mdqasim01.github.io/ResponsiveWebpageSturucture/
+https://mdqasim01.github.io/ResponsiveWebpageStructure/
