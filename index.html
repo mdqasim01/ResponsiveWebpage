@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS WebPage</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        line-height: 1.5rem;
+      }
+      #header {
+        background: black;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 100px;
+      }
+      #contentwrapper {
+        float: left;
+        width: 100%;
+      }
+      #contentcolumn {
+        margin: 0 230px 0 230px;
+      }
+      #leftcolumn {
+        float: left;
+        width: 230px;
+        margin-left: -100%;
+        background: #24c8ff;
+      }
+      #rightcolumn {
+        float: left;
+        width: 230px;
+        margin-left: -230px;
+        background: #fffb00;
+      }
+      .innertext {
+        margin: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: gray;
+      }
+      #footer {
+        clear: left;
+        width: 100%;
+        background: black;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        padding: 4px;
+      }
+
+      /* navigation bar  */
+      ul {
+        list-style-type: none;
+        margin: 0%;
+        padding: 0%;
+        background: #000;
+        border: 1px solid black;
+      }
+      li {
+        float: left;
+      }
+      li:last-child {
+        border-right: none;
+      }
+      li a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      li:hover:not(.active) {
+        background-color: #808080;
+      }
+      .active {
+        background-color: #0099ff;
+      }
+
+      /* responsive layout css */
+      @media (max-width: 840px) {
+        /*Drop Right Column Down */
+
+        #leftcolumn {
+          margin-left: -100%;
+        }
+        #rightcolumn {
+          float: none;
+          width: 100%;
+          margin-left: 0;
+          clear: both;
+        }
+        #contentcolumn {
+          margin-right: 0;
+        }
+      }
+      @media (max-width: 840px) {
+        /*Drop Left Column Down */
+        #leftcolumn {
+          float: none;
+          width: 100%;
+          margin-left: 0;
+          clear: both;
+        }
+        #contentcolumn {
+          margin-left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <ul style="display: inline">
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="contentwrapper">
+        <div id="contentcolumn">
+            <div class="innertext">
+              <b>Welcome !</b> <br/> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia repudiandae iure minus totam consequuntur? Aspernatur reiciendis cum, nihil suscipit hic nam assumenda eum doloribus sit iure, molestias sint minus dignissimos ea corrupti voluptate iusto beatae delectus accusamus culpa eaque voluptatem obcaecati! Perspiciatis eius reiciendis reprehenderit, rerum quod sequi nisi facere numquam voluptate ipsum vitae architecto dolorem tempore accusantium distinctio, tempora doloribus commodi officia, assumenda earum perferendis ea adipisci quia sit. Deleniti, recusandae officia. Minus et cupiditate eius explicabo! Quisquam officiis atque nihil, nostrum placeat similique dolore est repellat temporibus nisi iste fuga! Ratione, ex? Rem eveniet itaque nobis vel debitis.  
+            </div>
+
+        </div>
+    </div>
+    <div id="leftcolumn">
+      <div class="innertext">
+        <b>Left Column: <em>230px</em></b
+        ><br />
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+        beatae voluptatum nemo consectetur iste ducimus labore tempore vero
+        voluptatibus aliquam doloribus eveniet, est corrupti praesentium totam
+        exercitationem ad ratione quibusdam molestias, quae explicabo. Ullam
+        sint aperiam maiores, repudiandae exercitationem pariatur impedit
+        necessitatibus consequuntur officia nulla dolore nesciunt eaque
+        obcaecati at cumque dolores dolorum aliquam laudantium! Consequatur,
+        facere fugiat. Enim quas nam, sequi sunt fugit eveniet molestias
+        corporis veniam qui ratione modi fuga. Suscipit, praes assumenda cum
+        cumque quibusdam impedit nam dolores veniam ipsum magnam veritatis,
+        doloribus optio blanditiis reprehenderit rerum adipisci.
+      </div>
+    </div>
+
+    <div id="rightcolumn">
+      <div class="innertext">
+        <b>Right Column: <em>230px</em></b
+        ><br />
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+        beatae voluptatum nemo consectetur iste ducimus labore tempore vero
+        voluptatibus aliquam doloribus eveniet, est corrupti praesentium totam
+        exercitationem ad ratione quibusdam molestias, quae explicabo. Ullam
+        sint aperiam maiores, repudiandae exercitationem pariatur impedit
+        necessitatibus consequuntur officia nulla dolore nesciunt eaque
+        obcaecati at cumque dolores dolorum aliquam laudantium! Consequatur,
+        facere fugiat. Enim quas nam, sequi sunt fugit eveniet molestias
+        corporis veniam qui ratione modi fuga. Suscipit, praes assumenda cum
+        cumque quibusdam impedit nam dolores veniam ipsum magnam veritatis,
+        doloribus optio blanditiis reprehenderit rerum adipisci.
+      </div>
+    </div>
+
+    <div id="footer">Footer</div>
+  </body>
+</html>
